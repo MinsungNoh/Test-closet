@@ -1,0 +1,94 @@
+body {
+  background-color: #040404;
+  margin: 20px;
+}
+
+.button01 {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 54px 10px 54px;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  color: #040404;
+  background-color: #ffffff;
+}
+
+.button01:hover {
+  transition-duration: 0.2s;
+  color: #040404;
+  background-color: #EBEBEB;
+}
+
+.button01:active {
+  transition-duration: 0.1s;
+  color: #040404;
+  background-color: #bfbfbf;
+}
+
+.button01:focus {
+  box-shadow: 0 0 0 2px #505050 inset;
+}
+
+
+
+.button01-disabled {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 54px 10px 54px;
+  border-radius: 4px;
+
+  cursor: not-allowed;
+
+  color: #6A6A6A;
+  background-color: #3F3F3F;
+}
+
+
+
+.button02 {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 54px 10px 54px;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  color: #ffffff;
+  box-shadow: 0 0 0 1px #F4F4F4 inset;
+}
+
+.button02:hover {
+  color: #F8F8F8;
+  transition-duration: 0.2s;
+  box-shadow: 0 0 0 2px #EBEBEB inset;
+}
+
+.button02:active {
+  color: #f8f8f8;
+  transition-duration: 0.1s;
+  box-shadow: 0 0 0 2px #ebebeb inset;
+  background-color: rgba(235, 235, 235, 0.2);
+}
+
+
+.button02-disabled {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 54px 10px 54px;
+  border-radius: 4px;
+
+  cursor: not-allowed;
+
+  color: #6A6A6A;
+  box-shadow: 0 0 0 1px #3F3F3F inset;
+}
