@@ -1,94 +1,455 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
 body {
-  background-color: #040404;
+  background-color: #e5e5e5;
+  margin: 0px;
+  font-family:'SpoqaHanSans-kr';
+}
+
+*:focus {
+  outline: none;
+}
+
+/*기본 서술 텍스트 스타일*/
+
+.text-description-black {
+  padding: 20px;
+  color: black;
+  font-size: 14px;
+}
+
+.text-description-white {
+  padding: 20px;
+  color: white;
+  font-size: 14px;
+}
+
+
+/*문단 설정*/
+
+.backline-01 {
+  background-color: white;
   margin: 20px;
 }
 
-.button01 {
+.backline-02 {
+  background-color: black;
+  margin: 20px;
+}
+
+.backline-03 {
+  background-color: white;
+  margin: 20px;
+}
+
+.backline-04 {
+  background-color: black;
+  margin: 20px;
+}
+
+
+/* 버튼 솔리드, 블랙, abled*/
+
+.button-solid-black-able {
   display: inline-block;
   font-weight: bold;
   font-size: 14px;
   text-align: center;
   padding: 10px 54px 10px 54px;
-  border-radius: 4px;
-
-  cursor: pointer;
-
-  color: #040404;
-  background-color: #ffffff;
-}
-
-.button01:hover {
-  transition-duration: 0.2s;
-  color: #040404;
-  background-color: #EBEBEB;
-}
-
-.button01:active {
-  transition-duration: 0.1s;
-  color: #040404;
-  background-color: #bfbfbf;
-}
-
-.button01:focus {
-  box-shadow: 0 0 0 2px #505050 inset;
-}
-
-
-
-.button01-disabled {
-  display: inline-block;
-  font-weight: bold;
-  font-size: 14px;
-  text-align: center;
-  padding: 10px 54px 10px 54px;
-  border-radius: 4px;
-
-  cursor: not-allowed;
-
-  color: #6A6A6A;
-  background-color: #3F3F3F;
-}
-
-
-
-.button02 {
-  display: inline-block;
-  font-weight: bold;
-  font-size: 14px;
-  text-align: center;
-  padding: 10px 54px 10px 54px;
+  margin: 20px 10px 20px 20px;
   border-radius: 4px;
 
   cursor: pointer;
 
   color: #ffffff;
-  box-shadow: 0 0 0 1px #F4F4F4 inset;
+  background-color: #202020;
 }
 
-.button02:hover {
-  color: #F8F8F8;
+.button-solid-black-able:hover {
   transition-duration: 0.2s;
-  box-shadow: 0 0 0 2px #EBEBEB inset;
+  color: #ffffff;
+  background-color: #2e2e2e;
 }
 
-.button02:active {
-  color: #f8f8f8;
+.button-solid-black-able:active {
   transition-duration: 0.1s;
-  box-shadow: 0 0 0 2px #ebebeb inset;
-  background-color: rgba(235, 235, 235, 0.2);
+  color: #ffffff;
+  background-color: #131313;
 }
 
 
-.button02-disabled {
+/* 버튼 솔리드, 블랙, disabled*/
+
+.button-solid-black-disabled {
   display: inline-block;
   font-weight: bold;
   font-size: 14px;
   text-align: center;
   padding: 10px 54px 10px 54px;
+  margin: 20px 20px 20px 10px;
   border-radius: 4px;
 
   cursor: not-allowed;
 
-  color: #6A6A6A;
-  box-shadow: 0 0 0 1px #3F3F3F inset;
+  color: #ffffff;
+  background-color: #202020;
+
+  opacity: 0.4;
+}
+
+
+/* 버튼 솔리드, white, abled*/
+
+.button-solid-white-able {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 54px 10px 54px;
+  margin: 20px 10px 20px 20px;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  color: #040404;
+  background-color: #f4f4f4;
+}
+
+.button-solid-white-able:hover {
+  transition-duration: 0.2s;
+  color: #131313;
+  background-color: #f8f8f8;
+}
+
+.button-solid-white-able:active {
+  transition-duration: 0.1s;
+  color: #202020;
+  background-color: #EBEBEB;
+}
+
+
+/* 버튼 솔리드, white, disabled*/
+
+.button-solid-white-disabled {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 54px 10px 54px;
+  margin: 20px 20px 20px 10px;
+  border-radius: 4px;
+
+  cursor: not-allowed;
+
+  color: #040404;
+  background-color: #f4f4f4;
+
+  opacity: 0.4;
+}
+
+
+/* 버튼 솔리드, blue, abled*/
+
+.button-solid-blue-able {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 54px 10px 54px;
+  margin: 20px 10px 20px 20px;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  color: #ffffff;
+  background-color: #408af8;
+}
+
+.button-solid-blue-able:hover {
+  transition-duration: 0.2s;
+  color: #ffffff;
+  background-color: #7ab4ff;
+}
+
+.button-solid-blue-able:active {
+  transition-duration: 0.1s;
+  color: #ffffff;
+  background-color: #1f6bde;
+}
+
+
+/* 버튼 솔리드, blue, disabled*/
+
+.button-solid-blue-disabled {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 54px 10px 54px;
+  margin: 20px 20px 20px 10px;
+  border-radius: 4px;
+
+  cursor: not-allowed;
+
+  color: #ffffff;
+  background-color: #408af8;
+
+  opacity: 0.4;
+}
+
+
+/* 버튼 솔리드, red, abled*/
+
+.button-solid-red-able {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 54px 10px 54px;
+  margin: 20px 10px 20px 20px;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  color: #ffffff;
+  background-image: linear-gradient(to right, #D0041F, #F04B52);
+}
+
+.button-solid-red-able:hover {
+  transition-duration: 0.2s;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #F04B52, #F04B52);
+}
+
+.button-solid-red-able:active {
+  transition-duration: 0.1s;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #D0041F, #D0041F);
+}
+
+
+/* 버튼 솔리드, red, disabled*/
+
+.button-solid-red-disabled {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 54px 10px 54px;
+  margin: 20px 20px 20px 10px;
+  border-radius: 4px;
+
+  cursor: not-allowed;
+
+  color: #ffffff;
+  background-image: linear-gradient(to right, #D0041F, #F04B52);
+
+  opacity: 0.4;
+}
+
+
+
+
+
+/* 버튼 고스트, 블랙, abled*/
+
+.button-ghost-black-able {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 54px 10px 54px;
+  margin: 20px 10px 20px 20px;
+  border-radius: 4px;
+  box-shadow: inset 0px 0px 0px 1px #202020;
+
+  cursor: pointer;
+
+  color: #202020;
+}
+
+.button-ghost-black-able:hover {
+  transition-duration: 0.2s;
+  color: #202020;
+  box-shadow: inset 0px 0px 0px 2px #202020;
+}
+
+.button-ghost-black-able:active {
+  transition-duration: 0.1s;
+  color: #202020;
+  background-color: rgba(19, 19, 19, 0.2);
+  box-shadow: inset 0px 0px 0px 2px #131313;
+}
+
+
+/* 버튼 고스트, 블랙, disabled*/
+
+.button-ghost-black-disabled {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 54px 10px 54px;
+  margin: 20px 20px 20px 10px;
+  border-radius: 4px;
+  box-shadow: inset 0px 0px 0px 1px #202020;
+
+  cursor: not-allowed;
+
+  color: #202020;
+
+  opacity: 0.4;
+}
+
+
+/* 버튼 고스트, white, abled*/
+
+.button-ghost-white-able {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 54px 10px 54px;
+  margin: 20px 10px 20px 20px;
+  border-radius: 4px;
+  box-shadow: inset 0px 0px 0px 1px #ffffff;
+
+  cursor: pointer;
+
+  color: #ffffff;
+}
+
+.button-ghost-white-able:hover {
+  transition-duration: 0.2s;
+  color: #ffffff;
+  box-shadow: inset 0px 0px 0px 2px #ffffff;
+}
+
+.button-ghost-white-able:active {
+  transition-duration: 0.1s;
+  color: #ffffff;
+  background-color: rgba(235, 235, 235, 0.2);
+  box-shadow: inset 0px 0px 0px 2px #F4F4F4;
+}
+
+
+/* 버튼 고스트, white, disabled*/
+
+.button-ghost-white-disabled {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 54px 10px 54px;
+  margin: 20px 20px 20px 10px;
+  border-radius: 4px;
+  box-shadow: inset 0px 0px 0px 1px #ffffff;
+
+  cursor: not-allowed;
+
+  color: #ffffff;
+
+  opacity: 0.4;
+}
+
+
+/* 버튼 blue, white, abled*/
+
+.button-ghost-blue-able {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 54px 10px 54px;
+  margin: 20px 10px 20px 20px;
+  border-radius: 4px;
+  box-shadow: inset 0px 0px 0px 1px #408AF8;
+
+  cursor: pointer;
+
+  color: #408AF8;
+}
+
+.button-ghost-blue-able:hover {
+  transition-duration: 0.2s;
+  color: #408AF8;
+  box-shadow: inset 0px 0px 0px 2px #408AF8;
+}
+
+.button-ghost-blue-able:active {
+  transition-duration: 0.1s;
+  color: #408AF8;
+  background-color: rgba(31, 107, 222, 0.2);
+  box-shadow: inset 0px 0px 0px 2px #408AF8;
+}
+
+
+/* 버튼 고스트, blue, disabled*/
+
+.button-ghost-blue-disabled {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 54px 10px 54px;
+  margin: 20px 20px 20px 10px;
+  border-radius: 4px;
+  box-shadow: inset 0px 0px 0px 1px #408AF8;
+
+  cursor: not-allowed;
+
+  color: #408AF8;
+
+  opacity: 0.4;
+}
+
+
+/* 버튼 blue, red, abled*/
+
+.button-ghost-red-able {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 54px 10px 54px;
+  margin: 20px 10px 20px 20px;
+  border-radius: 4px;
+  box-shadow: inset 0px 0px 0px 1px #F04B52;
+
+  cursor: pointer;
+
+  color: #F04B52;
+}
+
+.button-ghost-red-able:hover {
+  transition-duration: 0.2s;
+  color: #F04B52;
+  box-shadow: inset 0px 0px 0px 2px #F04B52;
+}
+
+.button-ghost-red-able:active {
+  transition-duration: 0.1s;
+  color: #F04B52;
+  background-image: linear-gradient(to right, rgba(208, 4, 31, 0.2) , rgba(240, 75, 82, 0.2));
+  box-shadow: inset 0px 0px 0px 2px #F04B52;
+}
+
+
+/* 버튼 고스트, red, disabled*/
+
+.button-ghost-red-disabled {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 54px 10px 54px;
+  margin: 20px 20px 20px 10px;
+  border-radius: 4px;
+  box-shadow: inset 0px 0px 0px 1px #F04B52;
+
+  cursor: not-allowed;
+
+  color: #F04B52;
+
+  opacity: 0.4;
 }
